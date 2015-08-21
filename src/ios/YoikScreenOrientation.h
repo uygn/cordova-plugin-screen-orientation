@@ -24,11 +24,14 @@ SOFTWARE.
 
 #import <Cordova/CDVPlugin.h>
 #import <Cordova/CDVShared.h>
-
+#import "MyMainViewController.h"
 @interface YoikScreenOrientation : CDVPlugin
 
 - (void)screenOrientation:(CDVInvokedUrlCommand *)command;
 
+@end
+
+@interface MyMainViewController (PolyFillMyMainViewController)
 @end
 
 @interface ForcedViewController : UIViewController
